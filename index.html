@@ -15,42 +15,50 @@
       <b>Férfi vagy? </b>
 
          <p class='valaszok'>
-             <input type=radio name='k1'> Igen <br>
-             <input type=radio name='k1'> Nem  <br>
+             <input type=radio name='k1' onclick="document.teszt.k2[1].checked=true"> Igen <br>
+             <input type=radio name='k1' onclick="document.teszt.k2[0].checked=true"> Nem  <br>
          </p>
 
       <b>Nő vagy? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k2'> Igen <br>
-            <input type=radio name='k2'> Nem  <br>
+            <input type=radio name='k2' onclick="document.teszt.k1[1].checked=true"> Igen <br>
+            <input type=radio name='k2' onclick="document.teszt.k1[0].checked=true"> Nem  <br>
          </p>
 
       <b>30 és 40 közötti vagy? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k3'> Igen <br>
-            <input type=radio name='k3'> Nem  <br>
+            <input type=radio name='k3' onclick="document.teszt.k4[1].checked=true
+												document.teszt.k5[1].checked=true
+												document.teszt.k6[1].checked=true"> Igen <br>
+            <input type=radio name='k3' > Nem  <br>
          </p>
 
       <b>40 és 50 közötti vagy? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k4'> Igen <br>
+            <input type=radio name='k4' onclick="document.teszt.k3[1].checked=true
+												document.teszt.k5[1].checked=true
+												document.teszt.k6[1].checked=true"> Igen <br>
             <input type=radio name='k4'> Nem  <br>
          </p>
 
       <b>50 és 70 közötti vagy? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k5'> Igen <br>
+            <input type=radio name='k5' onclick="document.teszt.k3[1].checked=true
+												document.teszt.k4[1].checked=true
+												document.teszt.k6[1].checked=true"> Igen <br>
             <input type=radio name='k5'> Nem  <br>
          </p>
 
       <b>70 évesnél idősebb vagy? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k6'> Igen <br>
+            <input type=radio name='k6' onclick="document.teszt.k3[1].checked=true
+												document.teszt.k4[1].checked=true
+												document.teszt.k5[1].checked=true"> Igen <br>
             <input type=radio name='k6'> Nem  <br>
          </p>
 
@@ -78,7 +86,7 @@
       <b>Egyedül élsz? </b>
 	  
          <p class='valaszok'>
-            <input type=radio name='k10'> Igen <br>
+            <input type=radio name='k10' onclick="document.teszt.k11[1].checked=true"> Igen <br>
 			<input type=radio name='k10'> Nem <br>
          </p>
 
@@ -175,21 +183,24 @@
       <b>40-nél több cigarettát szívsz el naponta? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k24'> Igen <br>
+            <input type=radio name='k24' onclick="document.teszt.k25[1].checked=true
+												  document.teszt.k26[1].checked=true"> Igen <br>
 			<input type=radio name='k24'> Nem <br>
          </p>
 		 		 
       <b>21-40 cigarettát szívsz el naponta? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k25'> Igen <br>
+            <input type=radio name='k25' onclick="document.teszt.k24[1].checked=true
+											   	  document.teszt.k26[1].checked=true"> Igen <br>
 			<input type=radio name='k25'> Nem <br>
          </p>
 		 		 
       <b>1-20 cigarettát szívsz el naponta? </b>
 
          <p class='valaszok'>
-            <input type=radio name='k26'> Igen <br>
+            <input type=radio name='k26'  onclick="document.teszt.k24[1].checked=true
+												   document.teszt.k25[1].checked=true"> Igen <br>
 			<input type=radio name='k26'> Nem <br>
          </p>
 		 		 
@@ -264,8 +275,6 @@
 
 </form>
 
-
-
 <script language='javascript'>
 
 
@@ -276,6 +285,38 @@
          if( document.teszt.k1[0].checked )   ev = ev -3
 	     if( document.teszt.k2[0].checked )   ev = ev +4
          if( document.teszt.k3[0].checked )   ev = ev +2		 
+         if( document.teszt.k4[0].checked )   ev = ev +3		 
+         if( document.teszt.k5[0].checked )   ev = ev +4		 
+         if( document.teszt.k6[0].checked )   ev = ev +5		 
+         if( document.teszt.k7[0].checked )   ev = ev +3		 
+         if( document.teszt.k8[0].checked )   ev = ev -2		 
+         if( document.teszt.k9[0].checked )   ev = ev +2		 
+         if( document.teszt.k10[0].checked )   ev = ev -3		 
+         if( document.teszt.k11[0].checked )   ev = ev +5		 
+         if( document.teszt.k12[0].checked )   ev = ev +1		 
+         if( document.teszt.k13[0].checked )   ev = ev +2		 
+         if( document.teszt.k14[0].checked )   ev = ev -2		 
+         if( document.teszt.k15[0].checked )   ev = ev -3		 
+         if( document.teszt.k16[0].checked )   ev = ev +3		 
+         if( document.teszt.k17[0].checked )   ev = ev +2		 
+         if( document.teszt.k18[0].checked )   ev = ev -4		 
+         if( document.teszt.k19[0].checked )   ev = ev +1		 
+         if( document.teszt.k20[0].checked )   ev = ev -2		 
+         if( document.teszt.k21[0].checked )   ev = ev -3		 
+         if( document.teszt.k22[0].checked )   ev = ev +3		 
+         if( document.teszt.k23[0].checked )   ev = ev -1		 
+         if( document.teszt.k24[0].checked )   ev = ev -8		 
+         if( document.teszt.k25[0].checked )   ev = ev -6		 
+         if( document.teszt.k26[0].checked )   ev = ev -3		 
+         if( document.teszt.k27[0].checked )   ev = ev -1		 
+         if( document.teszt.k28[0].checked )   ev = ev -8		 
+         if( document.teszt.k29[0].checked )   ev = ev -4		 
+         if( document.teszt.k30[0].checked )   ev = ev -2		 
+         if( document.teszt.k31[0].checked )   ev = ev +2		 
+         if( document.teszt.k32[0].checked )   ev = ev +2		 
+         if( document.teszt.k33[0].checked )   ev = ev +6		 
+         if( document.teszt.k34[0].checked )   ev = ev -4		 
+         if( document.teszt.k35[0].checked )   ev = ev -3		 	 
 
          alert( 'Helyes válaszaid száma: ' + ev )
       }
